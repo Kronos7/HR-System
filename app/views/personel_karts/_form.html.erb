@@ -1,0 +1,85 @@
+<%= form_for(@personel_kart) do |f| %>
+  <% if @personel_kart.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@personel_kart.errors.count, "error") %> prohibited this personel_kart from being saved:</h2>
+
+      <ul>
+      <% @personel_kart.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :personel_id %><br>
+    <%= f.number_field :personel_id %>
+  </div>
+  <div class="field">
+    <%= f.label :isim %><br>
+    <%= f.text_field :isim %>
+  </div>
+  <div class="field">
+    <%= f.label :soyisim %><br>
+    <%= f.text_field :soyisim %>
+  </div>
+  <div class="field">
+    <%= f.label :tc_kimlik %><br>
+    <%= f.number_field :tc_kimlik %>
+  </div>
+  <div class="field">
+    <%= f.label :dogum_tarihi %><br>
+    <%= f.date_select :dogum_tarihi, :start_year => 1940, :end_year => 2020 %>
+  </div>
+  <div class="field">
+    <%= f.label :baba_adi %><br>
+    <%= f.text_field :baba_adi %>
+  </div>
+  <div class="field">
+    <%= f.label :anne_adi %><br>
+    <%= f.text_field :anne_adi %>
+  </div>
+  <div class="field">
+    <%= f.label :ehliyet_no %><br>
+    <%= f.number_field :ehliyet_no %>
+  </div>
+  <div class="field">
+    <%= f.label :lise %><br>
+    <%= f.text_field :lise %>
+  </div>
+  <div class="field">
+    <%= f.label :universite %><br>
+    <%= f.text_field :universite %>
+  </div>
+  <div class="field">
+    <%= f.label :cep_no %><br>
+    <%= f.number_field :cep_no %>
+  </div>
+  <div class="field">
+    <%= f.label :ev_no %><br>
+    <%= f.number_field :ev_no %>
+  </div>
+  <div class="field">
+    <%= f.label :adres %><br>
+    <%= f.text_area :adres %>
+  </div>
+  <div class="field">
+    <%= f.label :proje_bil %><br>
+    <%= f.text_area :proje_bil %>
+  </div>
+  <div class="field">
+    <%= f.label :sinav_bil %><br>
+    <%= f.text_area :sinav_bil %>
+  </div>
+  <div class="field">
+    <%= f.label :bilgisayar_bil %><br>
+    <%= f.text_area :bilgisayar_bil %>
+  </div>
+  <div class="field">
+    <%= f.label :kan_gr %><br>
+    <%= f.text_field :kan_gr %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

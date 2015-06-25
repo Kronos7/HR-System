@@ -1,0 +1,35 @@
+<h1>Listing is_bilgisis</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Personel</th>
+      <th>Calisma sekli</th>
+      <th>Haftalik saat</th>
+      <th>Unvan</th>
+      <th>Birim</th>
+      <th>Lokasyon</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @is_bilgisis.each do |is_bilgisi| %>
+      <tr>
+        <td><%= is_bilgisi.personel_id %></td>
+        <td><%= is_bilgisi.calisma_sekli %></td>
+        <td><%= is_bilgisi.haftalik_saat %></td>
+        <td><%= is_bilgisi.unvan %></td>
+        <td><%= is_bilgisi.birim %></td>
+        <td><%= is_bilgisi.lokasyon %></td>
+        <td><%= link_to 'Show', is_bilgisi %></td>
+        <td><%= link_to 'Edit', edit_is_bilgisi_path(is_bilgisi) %></td>
+        <td><%= link_to 'Destroy', is_bilgisi, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Is bilgisi', new_is_bilgisi_path %>

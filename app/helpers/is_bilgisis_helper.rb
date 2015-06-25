@@ -1,0 +1,2 @@
+module IsBilgisisHelper
+end

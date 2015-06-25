@@ -1,0 +1,33 @@
+<%= form_for(@etkinlik_bilgisi) do |f| %>
+  <% if @etkinlik_bilgisi.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@etkinlik_bilgisi.errors.count, "error") %> prohibited this etkinlik_bilgisi from being saved:</h2>
+
+      <ul>
+      <% @etkinlik_bilgisi.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :personel_id %><br>
+    <%= f.number_field :personel_id %>
+  </div>
+  <div class="field">
+    <%= f.label :baslangic %><br>
+    <%= f.date_select :baslangic %>
+  </div>
+  <div class="field">
+    <%= f.label :bitis %><br>
+    <%= f.date_select :bitis %>
+  </div>
+  <div class="field">
+    <%= f.label :etkinlik %><br>
+    <%= f.check_box :etkinlik %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

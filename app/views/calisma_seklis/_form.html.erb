@@ -1,0 +1,21 @@
+<%= form_for(@calisma_sekli) do |f| %>
+  <% if @calisma_sekli.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@calisma_sekli.errors.count, "error") %> prohibited this calisma_sekli from being saved:</h2>
+
+      <ul>
+      <% @calisma_sekli.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :icerik %><br>
+    <%= f.text_field :icerik %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

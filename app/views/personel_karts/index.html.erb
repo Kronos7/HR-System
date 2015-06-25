@@ -1,0 +1,57 @@
+<h1>Listing personel_karts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Personel</th>
+      <th>Isim</th>
+      <th>Soyisim</th>
+      <th>Tc kimlik</th>
+      <th>Dogum tarihi</th>
+      <th>Baba adi</th>
+      <th>Anne adi</th>
+      <th>Ehliyet no</th>
+      <th>Lise</th>
+      <th>Universite</th>
+      <th>Cep no</th>
+      <th>Ev no</th>
+      <th>Adres</th>
+      <th>Proje bil</th>
+      <th>Sinav bil</th>
+      <th>Bilgisayar bil</th>
+      <th>Kan gr</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @personel_karts.each do |personel_kart| %>
+      <tr>
+        <td><%= personel_kart.personel_id %></td>
+        <td><%= personel_kart.isim %></td>
+        <td><%= personel_kart.soyisim %></td>
+        <td><%= personel_kart.tc_kimlik %></td>
+        <td><%= personel_kart.dogum_tarihi %></td>
+        <td><%= personel_kart.baba_adi %></td>
+        <td><%= personel_kart.anne_adi %></td>
+        <td><%= personel_kart.ehliyet_no %></td>
+        <td><%= personel_kart.lise %></td>
+        <td><%= personel_kart.universite %></td>
+        <td><%= personel_kart.cep_no %></td>
+        <td><%= personel_kart.ev_no %></td>
+        <td><%= personel_kart.adres %></td>
+        <td><%= personel_kart.proje_bil %></td>
+        <td><%= personel_kart.sinav_bil %></td>
+        <td><%= personel_kart.bilgisayar_bil %></td>
+        <td><%= personel_kart.kan_gr %></td>
+        <td><%= link_to 'Show', personel_kart %></td>
+        <td><%= link_to 'Edit', edit_personel_kart_path(personel_kart) %></td>
+        <td><%= link_to 'Destroy', personel_kart, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Personel kart', new_personel_kart_path %>

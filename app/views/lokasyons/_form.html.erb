@@ -1,0 +1,21 @@
+<%= form_for(@lokasyon) do |f| %>
+  <% if @lokasyon.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@lokasyon.errors.count, "error") %> prohibited this lokasyon from being saved:</h2>
+
+      <ul>
+      <% @lokasyon.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :icerik %><br>
+    <%= f.text_field :icerik %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

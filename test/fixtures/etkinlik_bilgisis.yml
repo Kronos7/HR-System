@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  personel_id: 1
+  baslangic: 2014-06-17
+  bitis: 2014-06-17
+  etkinlik: false
+
+two:
+  personel_id: 1
+  baslangic: 2014-06-17
+  bitis: 2014-06-17
+  etkinlik: false

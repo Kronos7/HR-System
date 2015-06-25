@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  personel_id: 1
+  isim: MyString
+  soyisim: MyString
+  tc_kimlik: 1
+  dogum_tarihi: 2014-06-17
+  baba_adi: MyString
+  anne_adi: MyString
+  ehliyet_no: 1
+  lise: MyString
+  universite: MyString
+  cep_no: 1
+  ev_no: 1
+  adres: MyText
+  proje_bil: MyText
+  sinav_bil: MyText
+  bilgisayar_bil: MyText
+  kan_gr: MyString
+
+two:
+  personel_id: 1
+  isim: MyString
+  soyisim: MyString
+  tc_kimlik: 1
+  dogum_tarihi: 2014-06-17
+  baba_adi: MyString
+  anne_adi: MyString
+  ehliyet_no: 1
+  lise: MyString
+  universite: MyString
+  cep_no: 1
+  ev_no: 1
+  adres: MyText
+  proje_bil: MyText
+  sinav_bil: MyText
+  bilgisayar_bil: MyText
+  kan_gr: MyString

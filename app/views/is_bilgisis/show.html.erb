@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Personel:</strong>
+  <%= @is_bilgisi.personel_id %>
+</p>
+
+<p>
+  <strong>Calisma sekli:</strong>
+  <%= @is_bilgisi.calisma_sekli %>
+</p>
+
+<p>
+  <strong>Haftalik saat:</strong>
+  <%= @is_bilgisi.haftalik_saat %>
+</p>
+
+<p>
+  <strong>Unvan:</strong>
+  <%= @is_bilgisi.unvan %>
+</p>
+
+<p>
+  <strong>Birim:</strong>
+  <%= @is_bilgisi.birim %>
+</p>
+
+<p>
+  <strong>Lokasyon:</strong>
+  <%= @is_bilgisi.lokasyon %>
+</p>
+
+<%= link_to 'Edit', edit_is_bilgisi_path(@is_bilgisi) %> |
+<%= link_to 'Back', is_bilgisis_path %>

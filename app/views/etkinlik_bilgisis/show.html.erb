@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Personel:</strong>
+  <%= @etkinlik_bilgisi.personel_id %>
+</p>
+
+<p>
+  <strong>Baslangic:</strong>
+  <%= @etkinlik_bilgisi.baslangic %>
+</p>
+
+<p>
+  <strong>Bitis:</strong>
+  <%= @etkinlik_bilgisi.bitis %>
+</p>
+
+<p>
+  <strong>Etkinlik:</strong>
+  <%= @etkinlik_bilgisi.etkinlik %>
+</p>
+
+<%= link_to 'Edit', edit_etkinlik_bilgisi_path(@etkinlik_bilgisi) %> |
+<%= link_to 'Back', etkinlik_bilgisis_path %>

@@ -1,0 +1,50 @@
+<%= form_for(@is_bilgisi) do |f| %>
+  <% if @is_bilgisi.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@is_bilgisi.errors.count, "error") %> prohibited this is_bilgisi from being saved:</h2>
+
+      <ul>
+      <% @is_bilgisi.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :personel_id %><br>
+    <%= f.number_field :personel_id %>
+  </div>
+
+  <!--
+
+  <div class="field">
+    <%= f.label :calisma_sekli %><br>
+    <%= f.text_field :calisma_sekli %>
+  </div>
+  -->
+  <div class="field">
+    <%= f.label :calisma_sekli %><br>
+    <%= f.select(:calisma_sekli, CalismaSekli.pluck(:icerik)) %>
+  </div>
+
+  <div class="field">
+    <%= f.label :haftalik_saat %><br>
+    <%= f.number_field :haftalik_saat %>
+  </div>
+  <div class="field">
+    <%= f.label :unvan %><br>
+    <%= f.text_field :unvan %>
+  </div>
+  <div class="field">
+    <%= f.label :birim %><br>
+    <%= f.text_field :birim %>
+  </div>
+  <div class="field">
+    <%= f.label :lokasyon %><br>
+    <%= f.text_field :lokasyon %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

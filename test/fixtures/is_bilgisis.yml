@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  personel_id: 1
+  calisma_sekli: MyString
+  haftalik_saat: 1
+  unvan: MyString
+  birim: MyString
+  lokasyon: MyString
+
+two:
+  personel_id: 1
+  calisma_sekli: MyString
+  haftalik_saat: 1
+  unvan: MyString
+  birim: MyString
+  lokasyon: MyString
